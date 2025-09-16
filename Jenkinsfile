@@ -15,7 +15,7 @@ pipeline {
       stage('push') {
             steps {
                 script {
-                    withDockerRegistry(credentialsId: 'dockerpass') {
+                    withDockerRegistry(credentialsId: 'dockernew') {
                       sh 'docker push shaikmustafa/paytm:bus '
                     }
                 }
